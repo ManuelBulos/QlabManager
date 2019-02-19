@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		065B9D972218B12000492129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B9D962218B12000492129 /* AppDelegate.swift */; };
+		065B9D992218B12000492129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B9D982218B12000492129 /* ViewController.swift */; };
+		065B9D9C2218B12000492129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065B9D9A2218B12000492129 /* Main.storyboard */; };
+		065B9D9E2218B12100492129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065B9D9D2218B12100492129 /* Assets.xcassets */; };
+		065B9DA12218B12100492129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065B9D9F2218B12100492129 /* LaunchScreen.storyboard */; };
+		065B9DE02218B5C100492129 /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DAC2218B5C000492129 /* F53OSCPacket.m */; };
+		065B9DE12218B5C100492129 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DAD2218B5C000492129 /* GCDAsyncUdpSocket.m */; };
+		065B9DE22218B5C100492129 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DB22218B5C000492129 /* GCDAsyncSocket.m */; };
+		065B9DE32218B5C100492129 /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DB72218B5C000492129 /* F53OSCServer.m */; };
+		065B9DE42218B5C100492129 /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DB82218B5C000492129 /* NSNumber+F53OSCNumber.m */; };
+		065B9DE52218B5C100492129 /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DB92218B5C000492129 /* F53OSCSocket.m */; };
+		065B9DE62218B5C100492129 /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DBD2218B5C000492129 /* NSString+F53OSCString.m */; };
+		065B9DE72218B5C100492129 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 065B9DC02218B5C000492129 /* README.markdown */; };
+		065B9DE82218B5C100492129 /* F53OSC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 065B9DC12218B5C000492129 /* F53OSC.podspec */; };
+		065B9DE92218B5C100492129 /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DC22218B5C000492129 /* F53OSCClient.m */; };
+		065B9DEA2218B5C100492129 /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DC32218B5C000492129 /* NSDate+F53OSCTimeTag.m */; };
+		065B9DEB2218B5C100492129 /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DC82218B5C000492129 /* F53OSCTimeTag.m */; };
+		065B9DEC2218B5C100492129 /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DC92218B5C000492129 /* NSData+F53OSCBlob.m */; };
+		065B9DED2218B5C100492129 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 065B9DCA2218B5C000492129 /* LICENSE.txt */; };
+		065B9DEE2218B5C100492129 /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DCB2218B5C000492129 /* F53OSCParser.m */; };
+		065B9DEF2218B5C100492129 /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DCD2218B5C000492129 /* F53OSCMessage.m */; };
+		065B9DF02218B5C100492129 /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DCE2218B5C000492129 /* F53OSCBundle.m */; };
+		065B9DF12218B5C100492129 /* QLKClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DCF2218B5C000492129 /* QLKClient.m */; };
+		065B9DF22218B5C100492129 /* QLKServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DD12218B5C000492129 /* QLKServer.m */; };
+		065B9DF32218B5C100492129 /* QLKCue.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DD22218B5C000492129 /* QLKCue.m */; };
+		065B9DF42218B5C100492129 /* QLKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DD32218B5C000492129 /* QLKMessage.m */; };
+		065B9DF52218B5C100492129 /* QLKBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DD42218B5C000492129 /* QLKBrowser.m */; };
+		065B9DF62218B5C100492129 /* QLKWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DDA2218B5C100492129 /* QLKWorkspace.m */; };
+		065B9DF72218B5C100492129 /* QLKDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DDD2218B5C100492129 /* QLKDefines.m */; };
+		065B9DF82218B5C100492129 /* QLKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 065B9DDE2218B5C100492129 /* QLKColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		065B9D932218B12000492129 /* QlabManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QlabManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		065B9D962218B12000492129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		065B9D982218B12000492129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		065B9D9B2218B12000492129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		065B9D9D2218B12100492129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		065B9DA02218B12100492129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		065B9DA22218B12100492129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		065B9DA92218B5BE00492129 /* QlabManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QlabManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		065B9DAB2218B5C000492129 /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCProtocols.h; sourceTree = "<group>"; };
+		065B9DAC2218B5C000492129 /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
+		065B9DAD2218B5C000492129 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		065B9DB02218B5C000492129 /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		065B9DB12218B5C000492129 /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		065B9DB22218B5C000492129 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		065B9DB32218B5C000492129 /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		065B9DB42218B5C000492129 /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
+		065B9DB52218B5C000492129 /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		065B9DB62218B5C000492129 /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
+		065B9DB72218B5C000492129 /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
+		065B9DB82218B5C000492129 /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		065B9DB92218B5C000492129 /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCSocket.m; sourceTree = "<group>"; };
+		065B9DBA2218B5C000492129 /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
+		065B9DBB2218B5C000492129 /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
+		065B9DBC2218B5C000492129 /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCParser.h; sourceTree = "<group>"; };
+		065B9DBD2218B5C000492129 /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		065B9DBE2218B5C000492129 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		065B9DBF2218B5C000492129 /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
+		065B9DC02218B5C000492129 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		065B9DC12218B5C000492129 /* F53OSC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = F53OSC.podspec; sourceTree = "<group>"; };
+		065B9DC22218B5C000492129 /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
+		065B9DC32218B5C000492129 /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		065B9DC42218B5C000492129 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		065B9DC52218B5C000492129 /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCSocket.h; sourceTree = "<group>"; };
+		065B9DC62218B5C000492129 /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		065B9DC72218B5C000492129 /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
+		065B9DC82218B5C000492129 /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
+		065B9DC92218B5C000492129 /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		065B9DCA2218B5C000492129 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		065B9DCB2218B5C000492129 /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCParser.m; sourceTree = "<group>"; };
+		065B9DCC2218B5C000492129 /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
+		065B9DCD2218B5C000492129 /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
+		065B9DCE2218B5C000492129 /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
+		065B9DCF2218B5C000492129 /* QLKClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKClient.m; sourceTree = "<group>"; };
+		065B9DD02218B5C000492129 /* QLKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKDefines.h; sourceTree = "<group>"; };
+		065B9DD12218B5C000492129 /* QLKServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKServer.m; sourceTree = "<group>"; };
+		065B9DD22218B5C000492129 /* QLKCue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKCue.m; sourceTree = "<group>"; };
+		065B9DD32218B5C000492129 /* QLKMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKMessage.m; sourceTree = "<group>"; };
+		065B9DD42218B5C000492129 /* QLKBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKBrowser.m; sourceTree = "<group>"; };
+		065B9DD52218B5C000492129 /* QLKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKColor.h; sourceTree = "<group>"; };
+		065B9DD62218B5C000492129 /* QLKBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKBrowser.h; sourceTree = "<group>"; };
+		065B9DD72218B5C000492129 /* QLKCue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKCue.h; sourceTree = "<group>"; };
+		065B9DD82218B5C000492129 /* QLKWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKWorkspace.h; sourceTree = "<group>"; };
+		065B9DD92218B5C100492129 /* QLKServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKServer.h; sourceTree = "<group>"; };
+		065B9DDA2218B5C100492129 /* QLKWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKWorkspace.m; sourceTree = "<group>"; };
+		065B9DDB2218B5C100492129 /* QLKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKMessage.h; sourceTree = "<group>"; };
+		065B9DDC2218B5C100492129 /* QLabKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLabKit.h; sourceTree = "<group>"; };
+		065B9DDD2218B5C100492129 /* QLKDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKDefines.m; sourceTree = "<group>"; };
+		065B9DDE2218B5C100492129 /* QLKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLKColor.m; sourceTree = "<group>"; };
+		065B9DDF2218B5C100492129 /* QLKClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLKClient.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		065B9D902218B12000492129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065B9D8A2218B12000492129 = {
+			isa = PBXGroup;
+			children = (
+				065B9D952218B12000492129 /* QlabManager */,
+				065B9D942218B12000492129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		065B9D942218B12000492129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				065B9D932218B12000492129 /* QlabManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		065B9D952218B12000492129 /* QlabManager */ = {
+			isa = PBXGroup;
+			children = (
+				065B9DA82218B5A100492129 /* QlbaFramework */,
+				065B9D962218B12000492129 /* AppDelegate.swift */,
+				065B9D982218B12000492129 /* ViewController.swift */,
+				065B9D9A2218B12000492129 /* Main.storyboard */,
+				065B9D9D2218B12100492129 /* Assets.xcassets */,
+				065B9D9F2218B12100492129 /* LaunchScreen.storyboard */,
+				065B9DA22218B12100492129 /* Info.plist */,
+			);
+			path = QlabManager;
+			sourceTree = "<group>";
+		};
+		065B9DA82218B5A100492129 /* QlbaFramework */ = {
+			isa = PBXGroup;
+			children = (
+				065B9DAA2218B5C000492129 /* F53OSC */,
+				065B9DDC2218B5C100492129 /* QLabKit.h */,
+				065B9DD62218B5C000492129 /* QLKBrowser.h */,
+				065B9DD42218B5C000492129 /* QLKBrowser.m */,
+				065B9DDF2218B5C100492129 /* QLKClient.h */,
+				065B9DCF2218B5C000492129 /* QLKClient.m */,
+				065B9DD52218B5C000492129 /* QLKColor.h */,
+				065B9DDE2218B5C100492129 /* QLKColor.m */,
+				065B9DD72218B5C000492129 /* QLKCue.h */,
+				065B9DD22218B5C000492129 /* QLKCue.m */,
+				065B9DD02218B5C000492129 /* QLKDefines.h */,
+				065B9DDD2218B5C100492129 /* QLKDefines.m */,
+				065B9DDB2218B5C100492129 /* QLKMessage.h */,
+				065B9DD32218B5C000492129 /* QLKMessage.m */,
+				065B9DD92218B5C100492129 /* QLKServer.h */,
+				065B9DD12218B5C000492129 /* QLKServer.m */,
+				065B9DD82218B5C000492129 /* QLKWorkspace.h */,
+				065B9DDA2218B5C100492129 /* QLKWorkspace.m */,
+				065B9DA92218B5BE00492129 /* QlabManager-Bridging-Header.h */,
+			);
+			path = QlbaFramework;
+			sourceTree = "<group>";
+		};
+		065B9DAA2218B5C000492129 /* F53OSC */ = {
+			isa = PBXGroup;
+			children = (
+				065B9DAB2218B5C000492129 /* F53OSCProtocols.h */,
+				065B9DAC2218B5C000492129 /* F53OSCPacket.m */,
+				065B9DAD2218B5C000492129 /* GCDAsyncUdpSocket.m */,
+				065B9DAE2218B5C000492129 /* F53OSC Monitor */,
+				065B9DB02218B5C000492129 /* NSString+F53OSCString.h */,
+				065B9DB12218B5C000492129 /* NSDate+F53OSCTimeTag.h */,
+				065B9DB22218B5C000492129 /* GCDAsyncSocket.m */,
+				065B9DB32218B5C000492129 /* F53OSCFoundationAdditions.h */,
+				065B9DB42218B5C000492129 /* F53OSCClient.h */,
+				065B9DB52218B5C000492129 /* NSData+F53OSCBlob.h */,
+				065B9DB62218B5C000492129 /* F53OSCTimeTag.h */,
+				065B9DB72218B5C000492129 /* F53OSCServer.m */,
+				065B9DB82218B5C000492129 /* NSNumber+F53OSCNumber.m */,
+				065B9DB92218B5C000492129 /* F53OSCSocket.m */,
+				065B9DBA2218B5C000492129 /* F53OSCMessage.h */,
+				065B9DBB2218B5C000492129 /* F53OSCBundle.h */,
+				065B9DBC2218B5C000492129 /* F53OSCParser.h */,
+				065B9DBD2218B5C000492129 /* NSString+F53OSCString.m */,
+				065B9DBE2218B5C000492129 /* GCDAsyncUdpSocket.h */,
+				065B9DBF2218B5C000492129 /* F53OSCPacket.h */,
+				065B9DC02218B5C000492129 /* README.markdown */,
+				065B9DC12218B5C000492129 /* F53OSC.podspec */,
+				065B9DC22218B5C000492129 /* F53OSCClient.m */,
+				065B9DC32218B5C000492129 /* NSDate+F53OSCTimeTag.m */,
+				065B9DC42218B5C000492129 /* GCDAsyncSocket.h */,
+				065B9DC52218B5C000492129 /* F53OSCSocket.h */,
+				065B9DC62218B5C000492129 /* NSNumber+F53OSCNumber.h */,
+				065B9DC72218B5C000492129 /* F53OSCServer.h */,
+				065B9DC82218B5C000492129 /* F53OSCTimeTag.m */,
+				065B9DC92218B5C000492129 /* NSData+F53OSCBlob.m */,
+				065B9DCA2218B5C000492129 /* LICENSE.txt */,
+				065B9DCB2218B5C000492129 /* F53OSCParser.m */,
+				065B9DCC2218B5C000492129 /* F53OSC.h */,
+				065B9DCD2218B5C000492129 /* F53OSCMessage.m */,
+				065B9DCE2218B5C000492129 /* F53OSCBundle.m */,
+			);
+			path = F53OSC;
+			sourceTree = "<group>";
+		};
+		065B9DAE2218B5C000492129 /* F53OSC Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				065B9DAF2218B5C000492129 /* F53OSC Monitor */,
+			);
+			path = "F53OSC Monitor";
+			sourceTree = "<group>";
+		};
+		065B9DAF2218B5C000492129 /* F53OSC Monitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "F53OSC Monitor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		065B9D922218B12000492129 /* QlabManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 065B9DA52218B12100492129 /* Build configuration list for PBXNativeTarget "QlabManager" */;
+			buildPhases = (
+				065B9D8F2218B12000492129 /* Sources */,
+				065B9D902218B12000492129 /* Frameworks */,
+				065B9D912218B12000492129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QlabManager;
+			productName = QlabManagaer;
+			productReference = 065B9D932218B12000492129 /* QlabManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		065B9D8B2218B12000492129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = none;
+				TargetAttributes = {
+					065B9D922218B12000492129 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 065B9D8E2218B12000492129 /* Build configuration list for PBXProject "QlabManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 065B9D8A2218B12000492129;
+			productRefGroup = 065B9D942218B12000492129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				065B9D922218B12000492129 /* QlabManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		065B9D912218B12000492129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065B9DED2218B5C100492129 /* LICENSE.txt in Resources */,
+				065B9DA12218B12100492129 /* LaunchScreen.storyboard in Resources */,
+				065B9D9E2218B12100492129 /* Assets.xcassets in Resources */,
+				065B9DE72218B5C100492129 /* README.markdown in Resources */,
+				065B9D9C2218B12000492129 /* Main.storyboard in Resources */,
+				065B9DE82218B5C100492129 /* F53OSC.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		065B9D8F2218B12000492129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065B9DF62218B5C100492129 /* QLKWorkspace.m in Sources */,
+				065B9DF12218B5C100492129 /* QLKClient.m in Sources */,
+				065B9DF22218B5C100492129 /* QLKServer.m in Sources */,
+				065B9DEB2218B5C100492129 /* F53OSCTimeTag.m in Sources */,
+				065B9DF52218B5C100492129 /* QLKBrowser.m in Sources */,
+				065B9DEC2218B5C100492129 /* NSData+F53OSCBlob.m in Sources */,
+				065B9DE12218B5C100492129 /* GCDAsyncUdpSocket.m in Sources */,
+				065B9DE62218B5C100492129 /* NSString+F53OSCString.m in Sources */,
+				065B9DF32218B5C100492129 /* QLKCue.m in Sources */,
+				065B9DE32218B5C100492129 /* F53OSCServer.m in Sources */,
+				065B9DF42218B5C100492129 /* QLKMessage.m in Sources */,
+				065B9DF72218B5C100492129 /* QLKDefines.m in Sources */,
+				065B9DF82218B5C100492129 /* QLKColor.m in Sources */,
+				065B9DE92218B5C100492129 /* F53OSCClient.m in Sources */,
+				065B9DF02218B5C100492129 /* F53OSCBundle.m in Sources */,
+				065B9DE22218B5C100492129 /* GCDAsyncSocket.m in Sources */,
+				065B9D992218B12000492129 /* ViewController.swift in Sources */,
+				065B9DE02218B5C100492129 /* F53OSCPacket.m in Sources */,
+				065B9DE52218B5C100492129 /* F53OSCSocket.m in Sources */,
+				065B9DEF2218B5C100492129 /* F53OSCMessage.m in Sources */,
+				065B9DE42218B5C100492129 /* NSNumber+F53OSCNumber.m in Sources */,
+				065B9DEA2218B5C100492129 /* NSDate+F53OSCTimeTag.m in Sources */,
+				065B9D972218B12000492129 /* AppDelegate.swift in Sources */,
+				065B9DEE2218B5C100492129 /* F53OSCParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		065B9D9A2218B12000492129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065B9D9B2218B12000492129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		065B9D9F2218B12100492129 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				065B9DA02218B12100492129 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		065B9DA32218B12100492129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		065B9DA42218B12100492129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		065B9DA62218B12100492129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/QlabManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.QlabManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QlabManager/QlbaFramework/QlabManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		065B9DA72218B12100492129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/QlabManager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = none.QlabManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QlabManager/QlbaFramework/QlabManager-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		065B9D8E2218B12000492129 /* Build configuration list for PBXProject "QlabManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065B9DA32218B12100492129 /* Debug */,
+				065B9DA42218B12100492129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		065B9DA52218B12100492129 /* Build configuration list for PBXNativeTarget "QlabManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				065B9DA62218B12100492129 /* Debug */,
+				065B9DA72218B12100492129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 065B9D8B2218B12000492129 /* Project object */;
+}

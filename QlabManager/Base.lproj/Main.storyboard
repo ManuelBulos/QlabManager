@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.43"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QlabManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLS-Ng-k3w">
+                                <rect key="frame" x="313" y="96" width="323" height="130"/>
+                                <color key="backgroundColor" red="0.53103569925564165" green="0.53779582447722796" blue="0.57787363162020733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="WbJ-La-CIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="120"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" red="1" green="0.98096123540000002" blue="0.97348719699999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Waq-Mk-zRO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not connected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HU-Ji-IaO">
+                                <rect key="frame" x="313" y="37" width="690" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="eIX-Tf-LnM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.29389977331606221" green="0.29389977331606221" blue="0.29389977331606221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XDE-Ha-t0D">
+                                <rect key="frame" x="313" y="234" width="691" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uNM-br-W0y"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="DX1-wN-pLa"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZs-jn-nHu">
+                                <rect key="frame" x="681" y="638" width="323" height="50"/>
+                                <color key="backgroundColor" red="0.53103569930000005" green="0.53779582449999996" blue="0.57787363160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <state key="normal" title="Stop all cues">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopAllButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nL-2y-JbJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9AS-Ta-Uhn">
+                                <rect key="frame" x="680" y="698" width="323" height="50"/>
+                                <color key="backgroundColor" red="0.53103569930000005" green="0.53779582449999996" blue="0.57787363160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <state key="normal" title="Update table">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M1z-MC-7zp"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ygk-Z3-Qz2">
+                                <rect key="frame" x="20" y="37" width="285" height="731"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="285" id="b8y-pi-aQR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Amv-1B-yIS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Duz-Ex-yLk"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVP-A1-QnB">
+                                <rect key="frame" x="313" y="698" width="323" height="50"/>
+                                <color key="backgroundColor" red="0.53103569930000005" green="0.53779582449999996" blue="0.57787363160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="F8u-Dh-GQL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <state key="normal" title="Stop current cue">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopCurrentCueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kh8-Wg-kmu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-ay-9zy">
+                                <rect key="frame" x="313" y="638" width="323" height="50"/>
+                                <color key="backgroundColor" red="0.53103569930000005" green="0.53779582449999996" blue="0.57787363160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cT7-Hf-utS"/>
+                                    <constraint firstAttribute="width" constant="323" id="wcN-AB-mVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <state key="normal" title="Stop selected cue">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopSelectedCueButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o8K-1O-cjU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP4-Un-hOI">
+                                <rect key="frame" x="804" y="96" width="199" height="130"/>
+                                <color key="backgroundColor" red="0.53103569930000005" green="0.53779582449999996" blue="0.57787363160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="MAq-JM-Yge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleColor" red="1" green="0.98096123540000002" blue="0.97348719699999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="disconnectButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2IN-3p-Jdu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2HU-Ji-IaO" firstAttribute="leading" secondItem="ygk-Z3-Qz2" secondAttribute="trailing" constant="8" symbolic="YES" id="1l0-k4-Iae"/>
+                            <constraint firstItem="ygk-Z3-Qz2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2JX-6n-OvA"/>
+                            <constraint firstItem="Yh2-ay-9zy" firstAttribute="leading" secondItem="UVP-A1-QnB" secondAttribute="leading" id="2qF-ZI-UTQ"/>
+                            <constraint firstItem="ygk-Z3-Qz2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="35y-G5-ZMb"/>
+                            <constraint firstItem="bP4-Un-hOI" firstAttribute="trailing" secondItem="2HU-Ji-IaO" secondAttribute="trailing" id="4IC-bW-Gsg"/>
+                            <constraint firstItem="Yh2-ay-9zy" firstAttribute="top" secondItem="XDE-Ha-t0D" secondAttribute="bottom" constant="8" symbolic="YES" id="9gq-zc-b93"/>
+                            <constraint firstItem="2HU-Ji-IaO" firstAttribute="trailing" secondItem="xLS-Ng-k3w" secondAttribute="trailing" constant="367" id="AJw-Bp-pB0"/>
+                            <constraint firstItem="FZs-jn-nHu" firstAttribute="leading" secondItem="Yh2-ay-9zy" secondAttribute="trailing" constant="45" id="FUv-xt-Cie"/>
+                            <constraint firstItem="ygk-Z3-Qz2" firstAttribute="top" secondItem="2HU-Ji-IaO" secondAttribute="top" id="I17-F6-htZ"/>
+                            <constraint firstItem="XDE-Ha-t0D" firstAttribute="top" secondItem="bP4-Un-hOI" secondAttribute="bottom" constant="8" symbolic="YES" id="JtD-ZN-NOr"/>
+                            <constraint firstItem="xLS-Ng-k3w" firstAttribute="leading" secondItem="XDE-Ha-t0D" secondAttribute="leading" id="KNx-uv-FYw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9AS-Ta-Uhn" secondAttribute="trailing" constant="21" id="M9j-fk-0eu"/>
+                            <constraint firstItem="Yh2-ay-9zy" firstAttribute="top" secondItem="FZs-jn-nHu" secondAttribute="top" id="OaO-ci-YUI"/>
+                            <constraint firstItem="XDE-Ha-t0D" firstAttribute="top" secondItem="xLS-Ng-k3w" secondAttribute="bottom" constant="8" symbolic="YES" id="P3w-1V-Bhi"/>
+                            <constraint firstItem="UVP-A1-QnB" firstAttribute="top" secondItem="9AS-Ta-Uhn" secondAttribute="top" id="Q9M-as-6qi"/>
+                            <constraint firstItem="XDE-Ha-t0D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QfS-sD-NXT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2HU-Ji-IaO" secondAttribute="trailing" constant="21" id="RPs-VX-psi"/>
+                            <constraint firstItem="XDE-Ha-t0D" firstAttribute="trailing" secondItem="FZs-jn-nHu" secondAttribute="trailing" id="YtT-Y7-FEV"/>
+                            <constraint firstAttribute="bottom" secondItem="UVP-A1-QnB" secondAttribute="bottom" constant="20" symbolic="YES" id="c4L-zJ-nv6"/>
+                            <constraint firstItem="UVP-A1-QnB" firstAttribute="baseline" secondItem="9AS-Ta-Uhn" secondAttribute="firstBaseline" id="eGz-Tv-RTI"/>
+                            <constraint firstItem="XDE-Ha-t0D" firstAttribute="leading" secondItem="Yh2-ay-9zy" secondAttribute="leading" id="eLX-ED-3Ak"/>
+                            <constraint firstItem="Yh2-ay-9zy" firstAttribute="trailing" secondItem="UVP-A1-QnB" secondAttribute="trailing" id="eeR-K5-Xk7"/>
+                            <constraint firstItem="UVP-A1-QnB" firstAttribute="top" secondItem="Yh2-ay-9zy" secondAttribute="bottom" constant="10" id="fW4-sd-ZCF"/>
+                            <constraint firstItem="9AS-Ta-Uhn" firstAttribute="leading" secondItem="UVP-A1-QnB" secondAttribute="trailing" constant="44" id="maa-Ii-E6X"/>
+                            <constraint firstItem="2HU-Ji-IaO" firstAttribute="leading" secondItem="xLS-Ng-k3w" secondAttribute="leading" id="rCs-4n-ArL"/>
+                            <constraint firstItem="bP4-Un-hOI" firstAttribute="top" secondItem="xLS-Ng-k3w" secondAttribute="top" id="urc-Pg-obl"/>
+                            <constraint firstItem="xLS-Ng-k3w" firstAttribute="top" secondItem="2HU-Ji-IaO" secondAttribute="bottom" constant="8" symbolic="YES" id="wei-iO-eoL"/>
+                            <constraint firstItem="ygk-Z3-Qz2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="y7c-jh-WAr"/>
+                            <constraint firstItem="Yh2-ay-9zy" firstAttribute="baseline" secondItem="FZs-jn-nHu" secondAttribute="firstBaseline" id="z1U-c1-G9Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="connectionLabel" destination="2HU-Ji-IaO" id="haD-YI-TzW"/>
+                        <outlet property="cuesTableView" destination="XDE-Ha-t0D" id="YG6-4M-VdE"/>
+                        <outlet property="serversTableView" destination="ygk-Z3-Qz2" id="b44-Na-PAc"/>
+                        <outlet property="stopSelectedCueButton" destination="Yh2-ay-9zy" id="zTy-rS-w0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.109375" y="133.59375"/>
+        </scene>
+    </scenes>
+</document>
