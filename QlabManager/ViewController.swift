@@ -1,10 +1,4 @@
-//
 //  ViewController.swift
-//  QlabManager
-//
-//  Created by Jose Manuel Solis Bulos on 2/16/19.
-//  Copyright © 2019 none. All rights reserved.
-//
 
 import UIKit
 
@@ -78,8 +72,13 @@ class ViewController: UIViewController {
     }
     
     @objc func handleCueUpdated(_ notification: Notification) {
-        guard let _ = notification.object else { return }
-        NSObject.cancelPreviousPerformRequests(withTarget: cuesTableView, selector: #selector(cuesTableView.reloadData), object: nil)
+        guard
+            let _ = notification.object,
+            let cuesTableView = cuesTableView
+            else { return }
+        NSObject.cancelPreviousPerformRequests(withTarget: cuesTableView,
+                                               selector: #selector(cuesTableView.reloadData),
+                                               object: nil)
         cuesTableView.perform(#selector(cuesTableView.reloadData), with: nil, afterDelay: 0.05)
     }
     

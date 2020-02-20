@@ -1,10 +1,4 @@
-//
 //  AppDelegate.swift
-//  QlabManagaer
-//
-//  Created by Jose Manuel Solis Bulos on 2/16/19.
-//  Copyright © 2019 none. All rights reserved.
-//
 
 import UIKit
 
