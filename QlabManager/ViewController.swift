@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     let automaticConnection: Bool = true
     let refreshInterval: Double = 3
     
-    let qlabPORT: Int = 53000 // Example: 53000
-    let qlabIP: String = "192.168.0.101" // Example: 10.0.1.111
+    let qlabPORT: Int = 53000
+    let qlabIP: String = "192.168.0.101"
     let serverName: String = "" // Exmaple: MyServer
     
     var browser: QLKBrowser = QLKBrowser()
