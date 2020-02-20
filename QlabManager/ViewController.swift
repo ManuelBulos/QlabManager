@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     let automaticConnection: Bool = true
     let refreshInterval: Double = 3
     
-    let qlabPORT: Int = 0 // Example: 53000
-    let qlabIP: String = "" // Example: 10.0.1.111
+    let qlabPORT: Int = 53000 // Example: 53000
+    let qlabIP: String = "192.168.0.101" // Example: 10.0.1.111
     let serverName: String = "" // Exmaple: MyServer
     
     var browser: QLKBrowser = QLKBrowser()
@@ -133,8 +133,8 @@ class ViewController: UIViewController {
     }
     
     func startWorkspaceWithCue(_ cue: QLKCue) {
+        cue.start()
         currentCue = cue
-        currentWorkspace?.start(cue)
         setDurationTimerObserverForCue(cue)
     }
     
@@ -161,20 +161,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goButtonPressed(_ sender: UIButton) {
-        let row = cuesTableView.indexPathForSelectedRow?.row ?? 0
         let cuesArray = getCuesArrayForCurrentWorkspace()
         if cuesArray?.isEmpty ?? true {
             showNoCuesAlert()
-        } else {
-            guard let cue = cuesArray?[row] else {
-                if let firstCue = cuesArray?.first {
-                    startWorkspaceWithCue(firstCue)
-                } else {
-                    showNoCuesAlert()
-                }
-                return
-            }
-            startWorkspaceWithCue(cue)
+        } else if let selectedCue = selectedCue {
+            startWorkspaceWithCue(selectedCue)
+        } else if let firstCue = cuesArray?.first {
+            startWorkspaceWithCue(firstCue)
         }
     }
     
@@ -246,7 +239,7 @@ extension ViewController: UITableViewDataSource {
             cell.textLabel?.text = workspace.name.uppercased()
         } else {
             let cue = getCuesArrayForCurrentWorkspace()?[indexPath.row]
-            let numberText = "#" + (cue?.number ?? "")
+            let numberText = (cue?.number ?? "")
             let nameText = " " + (cue?.listName ?? "")
             cell.textLabel?.text = numberText + nameText
         }
