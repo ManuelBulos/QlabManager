@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     let qlabPORT: Int = 53000
     let qlabIP: String = "10.0.1.111"
-    let serverName: String = "Museo"
+    let serverName: String = "ServerName"
     
     var browser: QLKBrowser = QLKBrowser()
     var workspacesArray: [QLKWorkspace] = [QLKWorkspace]() // All workspaces in our server
